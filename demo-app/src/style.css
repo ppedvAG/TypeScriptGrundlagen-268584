@@ -294,3 +294,25 @@ code {
     border-right-color: var(--border);
   }
 }
+
+ul {
+  list-style: none;
+}
+form, ul > li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.important::after {
+  content: '❗';
+  color: red;
+}
+.low::after {
+  content: ' ⇩ ';
+  color: limegreen;
+}
+
